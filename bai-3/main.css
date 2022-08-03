@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,500;1,100&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    padding: 100px; 
+}
+
+.header .header-user{
+    font-size: 32px;
+    font-weight: 900;
+    font-family: 'Merriweather';
+}
+
+.nav-section {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.header-nav {
+    list-style: none;
+    display: flex;
+}
+
+.header-nav-item{
+    padding: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header-nav-item.active{
+    background-color:#849FFF;
+    border-radius: 8px;
+}
+
+.header-nav .header-nav-item.active a {
+    color: #fff;
+}
+
+.header-nav-item-search{
+    padding: 20px;
+    width: 327px;
+    height: 64px;
+    border: 1px solid #BFC8E6;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+}
+
+.header-nav .header-nav-item a {
+    text-decoration: none;
+    color: #151B32;
+    font-size: 16px;
+    font-weight: 500;
+    display: block;
+    opacity: 80%;
+}
+
+.header-nav-item-search i {
+    font-size: 25px;
+    color: #151B32;
+    padding: 10px;
+}
+
+.header-nav-item-search input{
+    font-size: 16px;
+    width: 100%;
+    border: none;
+    opacity: 70%;
+}
+
+.box-container {
+    margin-top: 57px;
+    border-radius: 16px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+
+.box-user-info {
+    background-color: #FBFCFF;
+    display: flex;
+    padding: 16px;
+    align-items: center;
+    justify-content: space-around;
+    width: 327px;
+    height: 208px;
+    border-radius: 16px;
+    flex: 0 0 calc(100%/3.1);
+}
+
+.box-user-info img{
+    width: 97px;
+    height: 97px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.box-user-info.active {
+    box-shadow: 0px 8px 23px 0px #DAE0F9B2;
+}
+
+.user-info {
+    display: flex;
+    flex-direction: column;
+    width: 137px;
+}
+
+.user-info .user-name {
+    font-weight: 900;
+    line-height: 23px;
+    font-size: 18px;
+}
+
+.user-info .school-name {
+    font-weight: 500;
+    line-height: 21px;
+    font-size: 14px;
+}
+
+.tags {
+    display: flex;
+    flex-direction: row;
+    color: #516FD4;
+    margin-top: 16px;
+    flex-wrap: wrap;
+}
+
+.tags .tag {
+    border-radius: 10px;
+    padding: 2px 8px;
+    border: 1px solid #516FD4;
+    margin-right: 5px;
+    margin-top: 5px;
+    font-size: 12px;
+}
